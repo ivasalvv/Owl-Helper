@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0D231E">
+
+    <!-- SEO: Description -->
+    <meta name="description" content="OWL HELPER — сервіс академічної підтримки студентів в Україні. Допомога з курсовими, дипломними роботами, рефератами, есеями, розрахунками, презентаціями та підготовкою до захисту. Індивідуальний підхід, дотримання термінів, конфіденційність, доступні ціни.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OWL HELPER — академічна підтримка студентів в Україні">
+    <meta property="og:description" content="Професійна допомога з курсовими, дипломними, рефератами та іншими навчальними роботами. Індивідуальний підхід, конфіденційність, доступні ціни.">
+    <meta property="og:image" content="images/logo.PNG">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:site_name" content="OWL HELPER">
+
+    <title>OWL HELPER — допомога студентам | Курсові, дипломні, реферати в Україні</title>
+
+    <!-- Шрифти: Playfair Display (заголовки) + Montserrat (основний текст) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Стилі -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <!-- Schema.org: Структуровані дані (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "OWL HELPER",
+        "description": "Сервіс академічної підтримки студентів в Україні. Допомога з курсовими, дипломними роботами, рефератами, розрахунками, презентаціями та підготовкою до захисту.",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Україна"
+        },
+        "sameAs": [
+            "https://www.instagram.com/owlhelper_ua/",
+            "https://t.me/owlhelper_ua"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Послуги академічної підтримки",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Курсові роботи",
+                        "description": "Написання та оформлення курсових робіт з різних дисциплін"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Дипломні роботи",
+                        "description": "Допомога з підготовкою дипломних робіт"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Реферати та есеї",
+                        "description": "Написання рефератів, есеїв та інших навчальних матеріалів"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Розрахункові роботи",
+                        "description": "Виконання розрахунків та практичних завдань"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Презентації",
+                        "description": "Створення та оформлення навчальних презентацій"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Контрольні роботи",
+                        "description": "Допомога з контрольними та самостійними роботами"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Редагування та оформлення",
+                        "description": "Перевірка, редагування та оформлення навчальних матеріалів"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Підготовка до захисту",
+                        "description": "Допомога з підготовкою до захисту курсових та дипломних робіт"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Skip-посилання для доступності -->
+    <a class="skip-link" href="#main">Перейти до основного вмісту</a>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="top">
+        <div class="container header__inner">
+
+            <!-- Логотип -->
+            <a href="#top" class="header__logo" aria-label="OWL HELPER — на початок">
+                <img src="images/logo.PNG" alt="OWL HELPER" class="header__logo-img">
+            </a>
+
+            <!-- Навігація (десктоп) -->
+            <nav class="header__nav" aria-label="Основна навігація">
+                <a href="#why" class="header__nav-link">Чому OWL HELPER</a>
+                <a href="#pricing" class="header__nav-link">Вартість</a>
+                <a href="#subjects" class="header__nav-link">Предмети</a>
+                <a href="#terms" class="header__nav-link">Умови співпраці</a>
+                <a href="#faq" class="header__nav-link">FAQ</a>
+            </nav>
+
+            <!-- Іконки соцмереж (десктоп) -->
+            <div class="header__social">
+                <a href="https://www.instagram.com/owlhelper_ua/" class="header__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram OWL HELPER">
+                    <!-- Instagram SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="5"/>
+                        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+                <a href="https://t.me/owlhelper_ua" class="header__social-link" target="_blank" rel="noopener noreferrer" aria-label="Telegram OWL HELPER">
+                    <!-- Telegram SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 2L11 13"/>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Бургер-меню (мобільні/планшети) -->
+            <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+
+        <!-- Мобільне меню -->
+        <div class="mobile-menu" id="mobile-menu">
+            <nav class="mobile-menu__nav" aria-label="Мобільна навігація">
+                <a href="#why" class="mobile-menu__link">Чому OWL HELPER</a>
+                <a href="#pricing" class="mobile-menu__link">Вартість</a>
+                <a href="#subjects" class="mobile-menu__link">Предмети</a>
+                <a href="#terms" class="mobile-menu__link">Умови співпраці</a>
+                <a href="#faq" class="mobile-menu__link">FAQ</a>
+            </nav>
+            <div class="mobile-menu__social">
+                <a href="https://www.instagram.com/owlhelper_ua/" class="mobile-menu__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram OWL HELPER">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="5"/>
+                        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://t.me/owlhelper_ua" class="mobile-menu__social-link" target="_blank" rel="noopener noreferrer" aria-label="Telegram OWL HELPER">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 2L11 13"/>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+                    </svg>
+                    <span>Telegram</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main">
+
+        <!-- ==================== HERO СЕКЦІЯ ==================== -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <h1 id="hero-title" class="hero__title">OWL HELPER — твій надійний помічник у навчанні</h1>
+                <p class="hero__subtitle">Навчання може бути складним, але ти не повинен залишатися зі своїми завданнями наодинці!</p>
+                <a href="#contact" class="hero__cta">Зв'язатися з нами</a>
+            </div>
+        </section>
+
+        <!-- ==================== INTRO СЕКЦІЯ ==================== -->
+        <section class="intro-section" aria-label="Про компанію OWL HELPER">
+            <div class="container">
+                <p class="intro-section__text"><strong>OWL HELPER</strong> — сучасний сервіс академічної підтримки студентів, створений для тих, хто цінує свій час, прагне якісних результатів і хоче впевнено долати навчальні труднощі.</p>
+                <p class="intro-section__text">Ми допомагаємо з написанням, підготовкою та оформленням навчальних матеріалів, поясненням складних тем, виконанням розрахунків, перевіркою робіт і підготовкою до захисту.</p>
+            </div>
+        </section>
+
+        <!-- ==================== ЧОМУ OWL HELPER ==================== -->
+        <section class="section-bg section-bg--chemistry" id="why" aria-labelledby="why-title">
+            <div class="content-box">
+                <h2 id="why-title" class="section__title">Чому обирають OWL HELPER?</h2>
+
+                <!-- Сітка з 6 карток переваг -->
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3 class="card__title">Індивідуальний підхід</h3>
+                        <p class="card__text">Враховуємо особливості кожного запиту, вимоги викладача та побажання студента.</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">Якість і відповідальність</h3>
+                        <p class="card__text">Уважно ставимося до змісту, структури та оформлення матеріалів.</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">Дотримання термінів</h3>
+                        <p class="card__text">Узгоджуємо строки виконання заздалегідь й надсилаємо роботу завчасно, аби був час на попередній огляд та корективи.</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">Конфіденційність</h3>
+                        <p class="card__text">Не розголошуємо персональні дані та деталі звернень.</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">Прозора вартість</h3>
+                        <p class="card__text">Пропонуємо варіанти під різний бюджет та повідомляємо ціну до початку співпраці.</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">Зручне спілкування</h3>
+                        <p class="card__text">Менеджер завжди на зв'язку для уточнення деталей замовлення, відповідає на всі запитання клієнта, аби всі вимоги були обговорені.</p>
+                    </article>
+                </div>
+
+                <p class="section__tagline"><strong>OWL HELPER</strong> — більше впевненості в навчанні, менше зайвого стресу!</p>
+            </div>
+        </section>
+
+        <!-- ==================== ВАРТІСТЬ ==================== -->
+        <section class="section-bg section-bg--physics" id="pricing" aria-labelledby="pricing-title">
+            <div class="content-box">
+                <h2 id="pricing-title" class="section__title">Вартість послуг OWL HELPER</h2>
+                <h3 class="section__subtitle">Якісна допомога в навчанні за доступною ціною!</h3>
+                <p class="section__text">Ми розуміємо, наскільки важливо для студентів отримувати професійну підтримку без зайвих витрат. Саме тому в OWL HELPER діє гнучка система ціноутворення.</p>
+
+                <h4 class="section__subtitle-sm">Від чого залежить вартість?</h4>
+
+                <!-- Список факторів ціноутворення -->
+                <div class="pricing-list">
+                    <div class="pricing-item">
+                        <p class="pricing-item__title">Тип завдання</p>
+                        <p class="pricing-item__text">Розрахунки, презентація, редагування або супровід навчального проекту.</p>
+                    </div>
+                    <div class="pricing-item">
+                        <p class="pricing-item__title">Складність теми</p>
+                        <p class="pricing-item__text">Завдання, що потребують поглибленого аналізу, спеціальних знань або складних розрахунків, оцінюються індивідуально.</p>
+                    </div>
+                    <div class="pricing-item">
+                        <p class="pricing-item__title">Обсяг матеріалів</p>
+                        <p class="pricing-item__text">Враховується кількість сторінок, завдань, таблиць, графіків та інших елементів.</p>
+                    </div>
+                    <div class="pricing-item">
+                        <p class="pricing-item__title">Термін виконання</p>
+                        <p class="pricing-item__text">Термінові звернення можуть передбачати додаткову оплату.</p>
+                    </div>
+                    <div class="pricing-item">
+                        <p class="pricing-item__title">Вимоги навчального закладу</p>
+                        <p class="pricing-item__text">Специфічне оформлення, методичні рекомендації та додаткові перевірки можуть впливати на вартість.</p>
+                    </div>
+                </div>
+
+                <p class="section__note">Менеджер проконсультує щодо написання роботи й запропонує на вибір декількох спеціалістів, аби студент міг обрати варіант саме під свій бюджет та запит.</p>
+            </div>
+        </section>
+
+        <!-- ==================== ПРОМО ВАРТІСТЬ ==================== -->
+        <section class="intro-section" aria-label="Прозора вартість послуг">
+            <div class="container">
+                <p class="intro-section__text intro-section__text--accent"><strong>Жодних прихованих платежів!</strong></p>
+                <p class="intro-section__text">Остаточну вартість погоджуємо до початку співпраці. Усі додаткові послуги та зміни обговорюємо заздалегідь.</p>
+                <p class="intro-section__text intro-section__text--accent"><strong>Хочеш дізнатися точну ціну?</strong></p>
+                <p class="intro-section__text">Надішли нам своє завдання та вимоги до нього — ми оцінимо складність, терміни й повідомимо вартість.</p>
+            </div>
+        </section>
+
+        <!-- ==================== ПРЕДМЕТИ ==================== -->
+        <section class="section-bg section-bg--philology" id="subjects" aria-labelledby="subjects-title">
+            <div class="content-box">
+                <h2 id="subjects-title" class="section__title">З яких предметів ми допомагаємо?</h2>
+                <h3 class="section__subtitle">Від гуманітарних наук до складних технічних дисциплін!</h3>
+                <p class="section__text">OWL HELPER надає академічну підтримку студентам різних спеціальностей та освітніх рівнів.</p>
+
+                <!-- Акордеон предметів -->
+                <div class="accordion">
+                    <!-- Економічні дисципліни -->
+                    <details class="accordion__item" name="subjects-accordion">
+                        <summary class="accordion__header">
+                            <span>Економічні дисципліни</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <ul>
+                                <li>Економіка</li>
+                                <li>Фінанси та банківська справа</li>
+                                <li>Бухгалтерський облік і аудит</li>
+                                <li>Маркетинг</li>
+                                <li>Менеджмент</li>
+                                <li>Статистика</li>
+                                <li>Економічний аналіз</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Гуманітарні та соціальні науки -->
+                    <details class="accordion__item" name="subjects-accordion">
+                        <summary class="accordion__header">
+                            <span>Гуманітарні та соціальні науки</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <ul>
+                                <li>Історія</li>
+                                <li>Філософія</li>
+                                <li>Соціологія</li>
+                                <li>Психологія</li>
+                                <li>Педагогіка</li>
+                                <li>Політологія</li>
+                                <li>Культурологія</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Точні та природничі науки -->
+                    <details class="accordion__item" name="subjects-accordion">
+                        <summary class="accordion__header">
+                            <span>Точні та природничі науки</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <ul>
+                                <li>Вища математика</li>
+                                <li>Фізика</li>
+                                <li>Хімія</li>
+                                <li>Біологія</li>
+                                <li>Екологія</li>
+                                <li>Географія</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Технічні дисципліни -->
+                    <details class="accordion__item" name="subjects-accordion">
+                        <summary class="accordion__header">
+                            <span>Технічні дисципліни</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <ul>
+                                <li>Інженерія</li>
+                                <li>Електротехніка</li>
+                                <li>Механіка</li>
+                                <li>Матеріалознавство</li>
+                                <li>Будівництво</li>
+                                <li>Технічні розрахунки</li>
+                                <li>Креслення</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Інформаційні технології -->
+                    <details class="accordion__item" name="subjects-accordion">
+                        <summary class="accordion__header">
+                            <span>Інформаційні технології</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <ul>
+                                <li>Програмування</li>
+                                <li>Інформатика</li>
+                                <li>Бази даних</li>
+                                <li>Алгоритми</li>
+                                <li>Комп'ютерні мережі</li>
+                                <li>Аналіз даних</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Правові дисципліни -->
+                    <details class="accordion__item" name="subjects-accordion">
+                        <summary class="accordion__header">
+                            <span>Правові дисципліни</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <ul>
+                                <li>Цивільне право</li>
+                                <li>Кримінальне право</li>
+                                <li>Адміністративне право</li>
+                                <li>Конституційне право</li>
+                                <li>Господарське право</li>
+                                <li>Міжнародне право</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Мови та філологія -->
+                    <details class="accordion__item" name="subjects-accordion">
+                        <summary class="accordion__header">
+                            <span>Мови та філологія</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <ul>
+                                <li>Українська мова</li>
+                                <li>Англійська мова</li>
+                                <li>Українська та зарубіжна література</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="section__note-block">
+                    <p class="section__note-accent">Не знайшов свого предмета?</p>
+                    <p class="section__note">Не хвилюйся! Надішли нам тему або умови завдання, і ми перевіримо можливість надання допомоги.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== УМОВИ СПІВПРАЦІ ==================== -->
+        <section class="section-bg section-bg--history" id="terms" aria-labelledby="terms-title">
+            <div class="content-box">
+                <h2 id="terms-title" class="section__title">Умови співпраці з OWL HELPER</h2>
+                <h3 class="section__subtitle">Просто, прозоро та зручно!</h3>
+                <p class="section__text">Ми прагнемо зробити процес співпраці максимально комфортним для кожного студента.</p>
+
+                <h4 class="section__subtitle-sm">Як відбувається співпраця?</h4>
+
+                <!-- Акордеон умов співпраці -->
+                <div class="accordion">
+                    <details class="accordion__item" name="terms-accordion">
+                        <summary class="accordion__header">
+                            <span>1. Залиш заявку</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Зв'яжися з нами через Instagram або Telegram. Опиши своє завдання, зазнач предмет, терміни та прикріпи методичні рекомендації, якщо вони є.</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion__item" name="terms-accordion">
+                        <summary class="accordion__header">
+                            <span>2. Отримай оцінку вартості</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Ми ознайомимося з матеріалами, уточнимо необхідні деталі та повідомимо вартість.</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion__item" name="terms-accordion">
+                        <summary class="accordion__header">
+                            <span>3. Підтвердь замовлення</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Після погодження всіх умов і внесення передоплати ми розпочинаємо роботу.</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion__item" name="terms-accordion">
+                        <summary class="accordion__header">
+                            <span>4. Отримай результат</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Готові матеріали надсилаємо в електронному форматі відповідно до узгоджених умов.</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion__item" name="terms-accordion">
+                        <summary class="accordion__header">
+                            <span>5. За потреби звернися щодо уточнень</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Якщо в межах погодженого завдання виникнуть зауваження, ми розглянемо їх та узгодимо необхідні виправлення.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FAQ ==================== -->
+        <section class="section-bg section-bg--biology" id="faq" aria-labelledby="faq-title">
+            <div class="content-box">
+                <h2 id="faq-title" class="section__title">FAQ. Поширені питання</h2>
+
+                <!-- Акордеон FAQ -->
+                <div class="accordion">
+                    <details class="accordion__item" name="faq-accordion">
+                        <summary class="accordion__header">
+                            <span>Оплата</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <ul>
+                                <li>Оплата здійснюється офіційно на рахунок ФОП.</li>
+                                <li>Для більшості замовлень передбачена передоплата в розмірі 50%.</li>
+                                <li>Решта суми сплачується відповідно до погоджених умов.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion__item" name="faq-accordion">
+                        <summary class="accordion__header">
+                            <span>Терміни</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Терміни визначаються індивідуально з кожним клієнтом в залежності від того, на коли необхідне завдання.</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion__item" name="faq-accordion">
+                        <summary class="accordion__header">
+                            <span>Виправлення та доопрацювання</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Виправлення помилок або невідповідностей початково погодженим вимогам здійснюється без додаткової оплати протягом 30 днів після отримання роботи.</p>
+                            <p>Нові завдання, зміна теми, обсягу або початкових вимог можуть оплачуватися окремо.</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion__item" name="faq-accordion">
+                        <summary class="accordion__header">
+                            <span>Конфіденційність</span>
+                            <span class="accordion__icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Ми відповідально ставимося до персональних даних клієнтів та не передаємо інформацію про звернення стороннім особам без належних підстав.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <h3 class="section__subtitle section__subtitle--bottom">OWL HELPER — навчальна підтримка, на яку можна розраховувати!</h3>
+            </div>
+        </section>
+
+        <!-- ==================== КОНТАКТИ ==================== -->
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact__inner">
+                    <div class="contact__content">
+                        <h2 id="contact-title" class="contact__title">Є питання з навчанням? Напишіть нам.</h2>
+                        <p class="contact__text">Розкажіть, що саме викликає труднощі. Почнемо з розмови й визначимо, як можемо допомогти.</p>
+                    </div>
+                    <div class="contact__actions">
+                        <a class="btn btn--primary" href="https://t.me/owlhelper_ua" target="_blank" rel="noopener noreferrer">
+                            Telegram
+                            <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <path d="M3 10h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a class="btn btn--ghost" href="https://www.instagram.com/owlhelper_ua/" target="_blank" rel="noopener noreferrer">
+                            Instagram
+                            <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <path d="M3 10h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__inner">
+                <!-- Логотип -->
+                <a href="#top" class="footer__logo" aria-label="OWL HELPER — на початок">
+                    <img src="images/logo.PNG" alt="OWL HELPER" class="footer__logo-img">
+                </a>
+
+                <!-- Навігація -->
+                <nav class="footer__nav" aria-label="Навігація у футері">
+                    <a href="#why" class="footer__nav-link">Чому OWL HELPER</a>
+                    <a href="#pricing" class="footer__nav-link">Вартість</a>
+                    <a href="#subjects" class="footer__nav-link">Предмети</a>
+                    <a href="#terms" class="footer__nav-link">Умови співпраці</a>
+                    <a href="#faq" class="footer__nav-link">FAQ</a>
+                </nav>
+
+                <!-- Соцмережі -->
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/owlhelper_ua/" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram OWL HELPER">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="5"/>
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/owlhelper_ua" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Telegram OWL HELPER">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M22 2L11 13"/>
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Нижня частина футера: копірайт -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Owl Helper 2026. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипти -->
+    <script src="js/main.js"></script>
+</body>
+</html>

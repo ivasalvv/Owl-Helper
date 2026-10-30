@@ -1,0 +1,534 @@
+/* ============================================
+   OWL HELPER — Адаптивні стилі (Media Queries)
+   ============================================ */
+
+/* ==============================================
+   ВЕЛИКІ МОНІТОРИ (1201px і вище)
+   Базові стилі — визначені в style.css
+   ============================================== */
+
+
+/* ==============================================
+   НОУТБУКИ (1025px – 1200px)
+   ============================================== */
+@media (max-width: 1200px) {
+    :root {
+        --container-padding: 40px;
+    }
+
+    .header__nav {
+        gap: clamp(12px, 1.8vw, 22px);
+    }
+
+    .header__nav-link {
+        font-size: 12px;
+    }
+
+    .content-box {
+        padding: 48px;
+    }
+
+    .contact__inner {
+        padding: 48px;
+    }
+
+    .hero__title {
+        font-size: clamp(34px, 5vw, 64px);
+    }
+}
+
+
+/* ==============================================
+   ПЛАНШЕТИ АЛЬБОМНА ОРІЄНТАЦІЯ (769px – 1024px)
+   Починаючи з 1024px — бургер-меню
+   ============================================== */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 72px;
+    }
+
+    /* Ховаємо десктопну навігацію та соцмережі */
+    .header__nav,
+    .header__social {
+        display: none;
+    }
+
+    /* Показуємо бургер */
+    .burger {
+        display: flex;
+    }
+
+    /* Сітка карток — 2 колонки */
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-box {
+        padding: 40px;
+    }
+
+    /* Контакти — одна колонка */
+    .contact__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 44px;
+    }
+
+    .contact__actions {
+        margin-top: 6px;
+        width: 100%;
+    }
+
+    .contact__actions .btn {
+        flex: 1;
+    }
+
+    /* Футер — планшетна версія: лого зліва, централізовані якірні посилання в лінію, соцмережі справа */
+    .footer__inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .footer__logo {
+        flex: 0 0 auto;
+    }
+
+    .footer__logo-img {
+        height: 52px;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px 20px;
+        flex: 1 1 auto;
+        margin: 0 auto;
+    }
+
+    .footer__nav-link {
+        font-family: var(--font-body);
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .footer__social {
+        flex: 0 0 auto;
+    }
+
+    .footer__bottom {
+        margin-top: 34px;
+        padding-top: 18px;
+    }
+
+    .hero__title {
+        font-size: clamp(32px, 5vw, 56px);
+    }
+
+    .hero__subtitle {
+        font-size: clamp(15px, 1.8vw, 18px);
+    }
+}
+
+
+/* ==============================================
+   ПЛАНШЕТИ ПОРТРЕТНА ОРІЄНТАЦІЯ (481px – 768px)
+   ============================================== */
+@media (max-width: 768px) {
+    :root {
+        --container-padding: 32px;
+        --header-height: 68px;
+    }
+
+    .container {
+        width: min(100% - var(--container-padding), 600px);
+    }
+
+    .hero {
+        padding: calc(var(--header-height) + 30px) 20px 30px;
+    }
+
+    .hero__title {
+        font-size: clamp(30px, 7vw, 48px);
+    }
+
+    .hero__subtitle {
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
+
+    .hero__cta {
+        padding: 14px 34px;
+        font-size: 14px;
+    }
+
+    /* Intro секція */
+    .intro-section {
+        padding: 50px 0;
+    }
+
+    .intro-section__text {
+        font-size: 15px;
+    }
+
+    /* Секції з фоном */
+    .section-bg {
+        padding: calc(var(--header-height) + 30px) 16px 40px;
+    }
+
+    .content-box {
+        padding: 32px 24px;
+        border-radius: 16px;
+        width: calc(100% - 24px);
+    }
+
+    /* Заголовки */
+    .section__title {
+        font-size: clamp(26px, 5vw, 38px);
+    }
+
+    .section__subtitle {
+        font-size: clamp(18px, 3vw, 24px);
+    }
+
+    .section__subtitle-sm {
+        font-size: clamp(16px, 2.5vw, 20px);
+    }
+
+    /* Картки — 1 колонка */
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: auto;
+        padding: 24px;
+    }
+
+    /* Акордеон */
+    .accordion__header {
+        font-size: 14px;
+        padding: 16px 0;
+    }
+
+    .accordion__body {
+        padding: 0 10px 20px 0;
+        font-size: 13px;
+    }
+
+    /* Контакти */
+    .contact {
+        padding: 50px 0;
+    }
+
+    .contact__inner {
+        padding: 36px 24px;
+    }
+
+    .contact__title {
+        font-size: clamp(26px, 5vw, 40px);
+    }
+
+    .contact__actions {
+        flex-direction: column;
+    }
+
+    /* Футер на планшетах портрет (481px - 768px) зберігає горизонтальне розміщення та централізацію */
+    .footer {
+        padding: 36px 0 28px;
+    }
+
+    .footer__inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .footer__logo-img {
+        height: 48px;
+    }
+
+    .footer__nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px 16px;
+    }
+
+    .footer__nav-link {
+        font-family: var(--font-body);
+        font-size: 12px;
+    }
+
+    .footer__bottom {
+        margin-top: 30px;
+        padding-top: 16px;
+    }
+
+    /* Pricing list */
+    .pricing-item__title {
+        font-size: 15px;
+    }
+
+    .pricing-item__text {
+        font-size: 12px;
+    }
+}
+
+
+/* ==============================================
+   МОБІЛЬНІ ТЕЛЕФОНИ (320px – 480px)
+   ============================================== */
+@media (max-width: 480px) {
+    :root {
+        --container-padding: 24px;
+        --header-height: 64px;
+    }
+
+    .container {
+        width: calc(100% - var(--container-padding));
+    }
+
+    /* Хедер */
+    .header__logo-img {
+        height: 46px;
+    }
+
+    /* Мобільне меню */
+    .mobile-menu {
+        padding: 12px 16px 20px;
+    }
+
+    .mobile-menu__link {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    /* Хіро */
+    .hero {
+        padding: calc(var(--header-height) + 20px) 16px 24px;
+    }
+
+    .hero__title {
+        font-size: clamp(26px, 8vw, 38px);
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 28px;
+    }
+
+    .hero__cta {
+        padding: 13px 30px;
+        font-size: 13px;
+    }
+
+    /* Intro */
+    .intro-section {
+        padding: 40px 0;
+    }
+
+    .intro-section__text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .intro-section__text--accent {
+        font-size: 16px;
+    }
+
+    /* Секції з фоном */
+    .section-bg {
+        padding: calc(var(--header-height) + 20px) 10px 30px;
+        min-height: auto;
+    }
+
+    .content-box {
+        padding: 24px 18px;
+        border-radius: 14px;
+        width: calc(100% - 16px);
+    }
+
+    /* Заголовки */
+    .section__title {
+        font-size: clamp(24px, 6vw, 32px);
+        margin-bottom: 12px;
+    }
+
+    .section__subtitle {
+        font-size: 18px;
+    }
+
+    .section__subtitle--bottom {
+        font-size: 16px;
+        margin-top: 24px;
+    }
+
+    .section__subtitle-sm {
+        font-size: 16px;
+        margin: 20px 0 14px;
+    }
+
+    .section__text {
+        font-size: 13px;
+    }
+
+    .section__tagline {
+        font-size: 15px;
+        margin-top: 28px;
+    }
+
+    .section__note {
+        font-size: 13px;
+    }
+
+    .section__note-accent {
+        font-size: 17px;
+    }
+
+    /* Картки */
+    .card {
+        padding: 20px;
+    }
+
+    .card__title {
+        font-size: 16px;
+    }
+
+    .card__text {
+        font-size: 12px;
+    }
+
+    .card::after {
+        font-size: 17px;
+        right: 18px;
+        top: 18px;
+    }
+
+    /* Акордеон */
+    .accordion__header {
+        font-size: 13px;
+        gap: 14px;
+    }
+
+    .accordion__icon {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+
+    .accordion__body {
+        font-size: 12px;
+        padding: 0 5px 18px 0;
+    }
+
+    .accordion__body ul {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+
+    /* Pricing */
+    .pricing-item {
+        padding: 16px 0;
+    }
+
+    .pricing-item__title {
+        font-size: 14px;
+    }
+
+    .pricing-item__text {
+        font-size: 12px;
+    }
+
+    /* Контакти */
+    .contact {
+        padding: 40px 0;
+    }
+
+    .contact__inner {
+        padding: 28px 18px;
+        border-radius: 14px;
+    }
+
+    .contact__title {
+        font-size: clamp(24px, 6vw, 34px);
+    }
+
+    .contact__text {
+        font-size: 13px;
+    }
+
+    .btn {
+        min-height: 46px;
+        padding: 12px 22px;
+        font-size: 12px;
+    }
+
+    /* Футер — на телефонах вертикальна побудова */
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer__logo-img {
+        height: 46px;
+    }
+
+    .footer__nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__nav-link {
+        font-family: var(--font-body);
+        font-size: 13px;
+    }
+
+    .footer__bottom {
+        margin-top: 24px;
+        padding-top: 14px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer__copyright {
+        font-size: 10px;
+    }
+}
+
+
+/* ==============================================
+   ДУЖЕ МАЛЕНЬКІ ЕКРАНИ (менше 360px)
+   ============================================== */
+@media (max-width: 360px) {
+    .hero__title {
+        font-size: 24px;
+    }
+
+    .hero__subtitle {
+        font-size: 13px;
+    }
+
+    .section__title {
+        font-size: 22px;
+    }
+
+    .content-box {
+        padding: 20px 14px;
+    }
+
+    .contact__inner {
+        padding: 24px 14px;
+    }
+}
