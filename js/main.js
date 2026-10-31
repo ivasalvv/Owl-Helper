@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, { passive: true });
 
-    /* ---------- Плавний скрол до якорів ---------- */
+    /* ---------- Плавний скрол до якорів (точно до початку розділу) ---------- */
     anchorLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href');
@@ -105,9 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const target = document.querySelector(href);
                 if (target) {
                     e.preventDefault();
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    const targetTop = target.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop);
+                    window.scrollTo({
+                        top: Math.round(targetTop),
+                        behavior: 'smooth'
                     });
                 }
             }

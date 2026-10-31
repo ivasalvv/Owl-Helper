@@ -345,6 +345,12 @@
         font-size: 16px;
     }
 
+    .promo__cta {
+        padding: 12px 28px;
+        font-size: 13px;
+        margin-top: 22px;
+    }
+
     /* Секції з фоном */
     .section-bg {
         padding: calc(var(--header-height) + 20px) 10px 30px;
